@@ -1,0 +1,171 @@
+<form id="inscription-demandeur" action="#" method="POST">
+    <h2>Inscription Demandeur de Financement</h2>
+    <div class="form-group">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+    </div>
+
+    <div class="form-group">
+        <label for="type_demandeur">Type de Demandeur :</label>
+        <select id="type_demandeur" name="type_demandeur" required>
+            <option value="" selected disabled>Choisissez le type de demandeur</option>
+            <option value="particulier">Particulier</option>
+            <option value="entreprise">Entreprise</option>
+        </select>
+    </div>    
+
+    <div class="form-group">
+        <label for="entreprise">Nom de l'organisme :</label>
+        <input type="text" id="entreprise" name="entreprise" required>
+    </div>
+
+    <div class="form-group">
+        <label for="adresse">Adresse Postale :</label>
+        <textarea id="adresse" name="adresse" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="secteur_activite">Secteur d'Activité :</label>
+        <select id="secteur_activite" name="secteur_activite" required>
+            <option value="" selected disabled>Choisissez un secteur</option>
+            <option value="Technologie">Technologie</option>
+            <option value="Santé">Santé</option>
+            <option value="Immobilier">Immobilier</option>
+            <option value="Éducation">Éducation</option>
+            <option value="Agriculture">Agriculture</option>
+            <!-- Ajoutez d'autres options selon vos besoins -->
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="montant_demande">Montant Demandé :</label>
+        <input type="number" id="montant_demande" name="montant_demande" placeholder="Entrez le montant souhaité" required>
+    </div>
+
+    <div class="form-group">
+        <label for="description_projet">Description du Projet :</label>
+        <textarea id="description_projet" name="description_projet" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="plan_affaires">Plan d'Affaires :</label>
+        <input type="file" id="plan_affaires" name="plan_affaires" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required>
+    </div>
+
+    <div class="form-group">
+        <label for="type_financement">Type de Financement :</label>
+        <select id="type_financement" name="type_financement" required>
+            <option value="prêt">Prêt</option>
+            <option value="subvention">Subvention</option>
+            <option value="investissement">Investissement en capital</option>
+            <!-- Ajoutez d'autres options selon vos besoins -->
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="garanties_offertes">Garanties Offertes :</label>
+        <textarea id="garanties_offertes" name="garanties_offertes" placeholder="Décrivez les garanties que vous pouvez offrir"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="historique_credit">Historique de Crédit :</label>
+        <input type="file" id="historique_credit" name="historique_credit">
+    </div>
+
+    <!-- Autres informations ou boutons -->
+    <button type="submit">Soumettre la Demande</button>
+</form>
+
+<style>
+    /* Style de l'arrière-plan de la page */
+    body {
+        margin: 0;
+        padding: 0;
+        background: url(Image/OIP5.jpg) center center/cover no-repeat fixed; /* Modifiez le chemin vers votre image */
+        font-family: Arial, sans-serif; /* Pour une police de caractères de secours */
+    }
+    
+    /* Style du formulaire */
+    #inscription-demandeur {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.7); /* Couleur de fond avec transparence */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Style des groupes de formulaire */
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    /* Style des libellés */
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    /* Style des champs de formulaire */
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group input[type="date"],
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.9); /* Couleur de fond avec transparence */
+    }
+    
+    /* Style des boutons */
+    button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #003366;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #002447;
+    }
+    
+    /* Style des titres de section */
+    h2,
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #003366;
+    }
+    
+    /* Style des messages d'erreur */
+    .error-message {
+        color: #ff0000;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    </style

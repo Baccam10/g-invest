@@ -1,0 +1,228 @@
+/* style.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header .logo img {
+  max-width: 150px;
+  height: auto;
+}
+/* Ajoutez ces styles pour centrer le texte */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-title {
+  color: #fff;
+  font-size: 2.8rem;
+  margin-left: 390px; /* Ajustez la marge selon vos besoins */
+  font-weight: bold;
+}
+
+.main-navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.main-navigation ul li {
+  margin-right: 20px;
+}
+
+.main-navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-navigation ul li a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #003366;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffcc00;
+}
+
+.features {
+  padding: 80px 0;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.feature p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.site-footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-links, .social-icons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-links a, .social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+.custom-hr {
+  border: none;
+  height: 9px; /* Épaisseur de la ligne */
+  background-color: #003366; /* Couleur de la ligne */
+  width: 70%; /* Largeur de la ligne */
+  margin: 0 auto; /* Centrer la ligne horizontalement */
+}
+.projects {
+  padding: 10px 0;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.project-card p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-card .btn {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #003366;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn.btn-highlight {
+  background-color: #ffd700; 
+  color: #000; 
+}
+/* Style de base pour la barre de recherche */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* Fond blanc pour la clarté */
+  border-radius: 40px; /* Bordures très arrondies pour un look moderne */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+  width: 320px; /* Largeur fixe pour la barre de recherche */
+  overflow: hidden; /* Cache les débordements pour maintenir les bordures arrondies */
+}
+
+/* Style pour le champ de texte */
+.search-container input[type="text"] {
+  flex-grow: 1; /* Permet au champ de texte de remplir l'espace */
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Transition pour l'effet de focus */
+}
+
+/* Style pour le bouton de recherche */
+.search-container button {
+  padding: 15px;
+  background-color: #003366; /* Couleur de fond pour le bouton */
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+/* Effet de focus pour le champ de texte */
+.search-container input[type="text"]:focus {
+  background-color: #e9ecef; /* Changement de couleur de fond au focus */
+}
+
+/* Effet de survol pour le bouton de recherche */
+.search-container button:hover {
+  transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Ajustez la hauteur selon vos besoins */
+}

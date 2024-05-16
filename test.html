@@ -1,0 +1,28 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<div class="chart-container" style="position: relative; height:40vh; width:80vw">
+    <canvas id="exchangeRateChart"></canvas>
+</div>
+<script>// Données hypothétiques pour le graphique
+    const data = {
+        labels: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'],
+        datasets: [{
+            label: 'Taux de Change USD/GNF',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [9800, 8700, 9400, 9000, 9600], // Remplacez ces valeurs par les taux de change réels
+        }]
+    };
+    
+    // Configuration du graphique
+    const config = {
+        type: 'line',
+        data: data,
+        options: {}
+    };
+    
+    // Création du graphique
+    const exchangeRateChart = new Chart(
+        document.getElementById('exchangeRateChart'),
+        config
+    );
+    </script>

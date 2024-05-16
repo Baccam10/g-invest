@@ -1,0 +1,206 @@
+<form id="inscription-investisseur" action="#" method="POST">
+    <h2>Inscription Investisseur</h2>
+    <div class="form-group">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+    </div>
+
+    <div class="form-group">
+        <label for="quartier">Quartier :</label>
+        <input type="text" id="quartier" name="quartier" required>
+    </div>
+
+    <div class="form-group">
+        <label for="date_naissance">Date de Naissance :</label>
+        <input type="date" id="date_naissance" name="date_naissance" required>
+    </div>
+
+    <div class="form-group">
+        <label for="secteur">Secteur d'Activité :</label>
+        <input type="text" id="secteur" name="secteur" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Mot de Passe :</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+
+    <!-- Informations Financières -->
+    <h3>Informations Financières</h3>
+    <div class="form-group">
+        <label for="revenu_mensuel">Revenu Mensuel :</label>
+        <input type="number" id="revenu_mensuel" name="revenu_mensuel" required>
+    </div>
+
+    <div class="form-group">
+        <label for="patrimoine_net">Patrimoine Net :</label>
+        <input type="number" id="patrimoine_net" name="patrimoine_net" required>
+    </div>
+
+    <!-- Expérience d'Investissement -->
+    <h3>Expérience d'Investissement</h3>
+    <div class="form-group">
+        <label for="niveau_experience">Niveau d'Expérience en Investissement :</label>
+        <select id="niveau_experience" name="niveau_experience" required>
+            <option value="debutant">Débutant</option>
+            <option value="intermediaire">Intermédiaire</option>
+            <option value="avance">Avancé</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="types_investissements_precedents">Types d'Investissements Précédents :</label>
+        <input type="text" id="types_investissements_precedents" name="types_investissements_precedents">
+    </div>
+
+    <!-- Préférences d'Investissement -->
+    <h3>Préférences d'Investissement</h3>
+    <div class="form-group">
+        <label for="secteur">Préférences de Secteur :</label>
+        <select id="secteur" name="secteur" required>
+            <option value="" selected disabled>Choisissez un secteur</option>
+            <option value="Technologie">Technologie</option>
+            <option value="Santé">Santé</option>
+            <option value="Immobilier">Immobilier</option>
+            <!-- Ajoutez d'autres options selon vos besoins -->
+        </select>
+    </div>    
+
+    <div class="form-group">
+        <label for="duree_investissement_preferee">Durée d'Investissement Préférée :</label>
+        <select id="duree_investissement_preferee" name="duree_investissement_preferee">
+            <option value="court">Court Terme</option>
+            <option value="moyen">Moyen Terme</option>
+            <option value="long">Long Terme</option>
+        </select>
+    </div>
+
+    <!-- Communication Préférée -->
+    <h3>Communication Préférée</h3>
+    <div class="form-group">
+        <label for="methode_communication_preferee">Méthode de Communication Préférée :</label>
+        <input type="text" id="methode_communication_preferee" name="methode_communication_preferee">
+    </div>
+
+    <!-- Informations Personnelles Supplémentaires -->
+    <h3>Informations Personnelles Supplémentaires</h3>
+    <div class="form-group">
+        <label for="situation_familiale">Situation Familiale :</label>
+        <select id="situation_familiale" name="situation_familiale">
+            <option value="celibataire">Célibataire</option>
+            <option value="marie">Marié</option>
+            <option value="autre">Autre</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="objectifs_personnels_professionnels">Objectifs Personnels et Professionnels :</label>
+        <textarea id="objectifs_personnels_professionnels" name="objectifs_personnels_professionnels"></textarea>
+    </div>
+
+    <!-- Documentation Additionnelle -->
+    <h3>Documentation Additionnelle</h3>
+    <div class="form-group">
+        <label for="piece_identite">Pièce d'Identité :</label>
+        <input type="file" id="piece_identite" name="piece_identite">
+    </div>
+
+    <div class="form-group">
+        <label for="justificatif_domicile">Justificatif de Domicile :</label>
+        <input type="file" id="justificatif_domicile" name="justificatif_domicile">
+    </div>
+
+    <!-- Autres informations ou boutons -->
+    <button type="submit">S'inscrire</button>
+</form>
+<style>
+    /* Style de l'arrière-plan de la page */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('Image/OIP3.jpg') center center no-repeat fixed; /* Modifiez le chemin vers votre image */
+    font-family: Arial, sans-serif; /* Pour une police de caractères de secours */
+    background-size: contain; /* Adapter l'image à la taille du formulaire */
+}
+    
+    /* Style du formulaire */
+    #inscription-investisseur {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.7); /* Couleur de fond avec transparence */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-size: cover; /* Adapter l'image à la taille du formulaire */
+    }
+    
+    /* Style des groupes de formulaire */
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    /* Style des libellés */
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    /* Style des champs de formulaire */
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group input[type="date"],
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.9); /* Couleur de fond avec transparence */
+    }
+    
+    /* Style des boutons */
+    button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #003366;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #002447;
+    }
+    
+    /* Style des titres de section */
+    h2,
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #003366;
+    }
+    
+    /* Style des messages d'erreur */
+    .error-message {
+        color: #ff0000;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    </style>
+    

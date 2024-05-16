@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - G-INVEST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="Image/G-INVEST.jpg" alt="Logo G-INVEST">
+                <span class="site-title">G-INVEST</span>
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="registration">
+        <div class="container">
+            <h2>Choisissez votre profil</h2>
+            <form id="profile-select-form" action="#" method="GET">
+                <select id="profile-select" name="profile" onchange="redirectToSelectedProfile()">
+                    <option value="">Sélectionner...</option>
+                    <option value="investisseur">Investisseur</option>
+                    <option value="demandeur">Demandeur de financement</option>
+                </select>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Vos liens de pied de page existants -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function redirectToSelectedProfile() {
+            var selectElement = document.getElementById("profile-select");
+            var selectedProfile = selectElement.options[selectElement.selectedIndex].value;
+            if (selectedProfile === "investisseur") {
+                window.location.href = "inscription-investisseur.html";
+            } else if (selectedProfile === "demandeur") {
+                window.location.href = "inscription-demandeur.html";
+            }
+        }
+    </script>
+</body>
+</html>
