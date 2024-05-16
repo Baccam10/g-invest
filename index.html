@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme d'Investissement G-INVEST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- ... vos autres liens ... -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="Image/G-INVEST.jpg" alt="Logo G-INVEST">
+            </div>
+             <!-- Barre de recherche ajoutée ici -->
+        <div class="search-container">
+            <form action="/recherche" method="get">
+                <input type="text" placeholder="Rechercher..." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="connexion.html"><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
+                    <li><a href="inscription.html"><i class="fas fa-user-plus"></i> Inscription</a></li>
+                </ul>
+            </nav>            
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenue chez G-INVEST</h1>
+                <p>Découvrez un monde où la finance est à portée de clic, où chaque projet a une histoire unique et où votre ambition trouve un écho.</p>
+                <div class="call-to-action">
+                    <a href="inscription.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> Inscrivez-vous maintenant</a>
+                    <a href="connexion.html" class="btn btn-secondary"><i class="fas fa-sign-in-alt"></i> Connectez-vous</a>
+                </div>                
+            </div>
+        </section>
+        <section class="introduction">
+            <div class="container">
+                <p>Rejoignez une communauté de visionnaires et bâtisseurs de demain. Que vous soyez investisseur ou entrepreneur, G-INVEST est votre plateforme pour innover et transformer le marché.</p>
+                <p>Explorez des projets révolutionnaires, partagez votre expertise et engagez-vous dans des partenariats stratégiques. Profitez de nos analyses, témoignages et ressources pédagogiques pour vous inspirer et vous guider.</p>
+                <p>Ensemble, façonnons un avenir prospère et innovant. Laissez votre empreinte dans le monde de l'investissement avec G-INVEST.</p>
+            </div>
+        </section> <br><br>
+        <hr class="custom-hr">
+        <section class="features">
+            <div class="container">
+                <div class="feature-card">
+                    <h2>Projets en cours</h2>
+                    <p>Impulsez le changement avec des initiatives qui redéfinissent le marché en découvrant des projets en ligne.</p>
+                    <section class="projects">
+                        <div class="project-card">
+                            <h2><i class="fas fa-lightbulb"></i> G-Clean</h2>
+                            <p><i class="fas fa-globe"></i> Domaine: Assainissement & Maintenance</p>
+                            <p><i class="fas fa-feather-alt"></i> Auteur: Mohamed Lamine Condé</p>
+                            <p><i class="fas fa-money-bill-wave"></i> Type d'investissement: Demande de capital</p>
+                            <p><i class="fas fa-stopwatch"></i> Durée: 3 ANS</p>
+                            <a href="lien_vers_le_projet" class="btn"><i class="fas fa-eye"></i> En savoir plus</a>
+                        </div>                      
+                        
+                    </section>
+                    <section class="projects">
+                        <div class="project-card">
+                            <h2><i class="fas fa-lightbulb"></i> Nom du projet</h2>
+                            <p><i class="fas fa-globe"></i> Domaine: Nom du domaine</p>
+                            <p><i class="fas fa-feather-alt"></i> Auteur: Nom de l'auteur</p>
+                            <p><i class="fas fa-money-bill-wave"></i> Type d'investissement: Type d'investissement</p>
+                            <p><i class="fas fa-stopwatch"></i> Durée: Durée du projet</p>
+                            <a href="lien_vers_le_projet" class="btn"><i class="fas fa-eye"></i> En savoir plus</a>
+                        </div>                    
+                        
+                    </section>
+                    <section class="projects">
+                        <div class="project-card">
+                            <h2><i class="fas fa-lightbulb"></i> Nom du projet</h2>
+                            <p><i class="fas fa-globe"></i> Domaine: Nom du domaine</p>
+                            <p><i class="fas fa-feather-alt"></i> Auteur: Nom de l'auteur</p>
+                            <p><i class="fas fa-money-bill-wave"></i> Type d'investissement: Type d'investissement</p>
+                            <p><i class="fas fa-stopwatch"></i> Durée: Durée du projet</p>
+                            <a href="lien_vers_le_projet" class="btn"><i class="fas fa-eye"></i> En savoir plus</a>
+                        </div>
+                        
+                        
+                    </section> 
+                    <section class="more">
+                        <div class="container">
+                            <h2>Voir Plus</h2>
+                            <p>Explorez plus de contenu et découvrez de nouvelles opportunités avec G-INVEST.</p>
+                            <a href="voirplus.html" class="btn btn-highlight">Voir Plus</a>
+                        </div>
+                    </section> <br> <br>
+                    <hr class="custom-hr">
+
+                <div class="feature-card">
+                    <h2>Paroles d'Investisseurs</h2>
+                    <p>Découvrez les expériences de nos membres et leur succès grâce à G-INVEST.</p>
+                </div> <br> <br>
+                <hr class="custom-hr">
+                <div class="feature-card">
+                    <h2>Taux Financiers Actuels</h2>
+                    <p>Restez à la pointe de l'information financière avec les dernières données du marché.</p>  
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<div class="chart-container" style="position: relative; height:40vh; width:80vw">
+    <canvas id="exchangeRateChart"></canvas>
+</div>
+                </div> <br><br>
+                <hr class="custom-hr">
+                <div class="feature-card">
+                    <h2>Initiation à la Finance</h2>
+                    <p>Élargissez vos connaissances avec nos ressources éducatives complètes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Termes et conditions</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>© 2024 G-INVEST. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
